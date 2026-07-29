@@ -114,6 +114,9 @@
         color: #FFF5F8;
         
      }
+     .bprp:hover{
+        border: 2px solid white;
+     }
      .chat,.chat-black{
         border:1px solid #ff3366;
          padding: 7px 11px;
@@ -137,6 +140,9 @@
         margin-left: 10px;
         text-decoration: none;
         color: #ffffff;
+     }
+     .abt:hover{
+      border:2px solid #ff3366 ;
      }
      .pa{
        color: black;
