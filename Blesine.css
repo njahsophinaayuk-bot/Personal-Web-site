@@ -310,6 +310,51 @@
          
       } 
       
+         
+      
+      /* ====== DEFAULT = DESKTOP FIRST ====== */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 8%;
+}
+
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* 3 cards side by side */
+  gap: 24px;
+}
+
+
+/* ====== @MEDIA FOR TABLET = less than 768px ====== */
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column; /* stack logo + links */
+    align-items: center;
+    gap: 15px;
+  }
+
+  .projects-grid {
+    grid-template-columns: repeat(2, 1fr); /* 2 cards side by side */
+  }
+}
+
+
+/* ====== @MEDIA FOR PHONE = less than 480px ====== */
+@media (max-width: 480px) {
+  .navbar {
+    padding: 15px 5%;
+  }
+  
+  .nav-links {
+    flex-direction: column; /* stack all nav links */
+    gap: 10px;
+  }
+
+  .projects-grid {
+    grid-template-columns: 1fr; /* 1 card per row */
+  }
+
 
      
         
