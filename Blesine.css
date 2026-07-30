@@ -362,15 +362,24 @@ h2{
   body,
   .body2{
     padding:15px;
-    
   }
+
+  /* Navigation stays horizontal on phones */
+  nav{
+    display:flex;
+    flex-direction:row;
+    justify-content:space-between;
+    align-items:center;
+    flex-wrap:wrap;
+    gap:10px;
+  }
+  /* ✔ Correction: Keeps the navigation in a row while allowing it to wrap if needed. */
 
   .abt-pic-div,
   .contain{
     margin-left:0;
   }
 
-  nav,
   .home-bck,
   .hm-flex,
   .abt-flex,
@@ -378,9 +387,11 @@ h2{
   .abtdiv2,
   .cntcpg,
   .pics-contianer{
+    display:flex;
     flex-direction:column;
     align-items:center;
   }
+  /* ✔ Correction: Removed "nav" from this list so only the page content stacks. */
 
   h1{
     font-size:40px;
@@ -403,14 +414,12 @@ h2{
   .send-btn{
     width:100%;
     max-width:500px;
-    
   }
 
   .abt-pic{
     width:100%;
     max-width:300px;
     height:auto;
-    
   }
 
   .info,
@@ -419,6 +428,5 @@ h2{
   .con,
   .per{
     word-wrap:break-word;
-    
   }
 }
