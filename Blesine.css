@@ -364,7 +364,8 @@ h2{
     padding:15px;
   }
 
-  /* Navigation stays horizontal on phones */
+
+  
   nav{
     display:flex;
     flex-direction:row;
@@ -373,12 +374,8 @@ h2{
     flex-wrap:wrap;
     gap:10px;
   }
-  /* ✔ Correction: Keeps the navigation in a row while allowing it to wrap if needed. */
+  
 
-  .abt-pic-div,
-  .contain{
-    margin-left:0;
-  }
 
   .home-bck,
   .hm-flex,
@@ -391,36 +388,69 @@ h2{
     flex-direction:column;
     align-items:center;
   }
-  /* ✔ Correction: Removed "nav" from this list so only the page content stacks. */
+  
+
 
   h1{
     font-size:40px;
   }
 
+
   p{
     font-size:18px;
   }
 
-  .contain,
-  .send-btn,
-  .abt-pic-div,
-  .pics{
-    width:100%;
-    max-width:350px;
-    margin:20px auto;
-  }
 
-  .contain,
+  
+  .contain{
+    width:100%;
+    max-width:500px;
+    margin:20px auto;
+    box-sizing:border-box;
+  }
+  
+
+
   .send-btn{
     width:100%;
     max-width:500px;
   }
+  
+  .pic1,
+  .pic2,
+  .pic3{
+    width:90%;
+    max-width:350px;
+    box-sizing:border-box;
+  }
+  
+
+
+  .pics{
+    width:100%;
+    max-width:300px;
+    height:auto;
+  }
+  
+  .abt-pic-div{
+    width:300px;
+    max-width:90%;
+    height:auto;
+    margin:20px auto;
+    padding:10px 30px;
+    box-sizing:border-box;
+    overflow:hidden;
+  }
+  
+
 
   .abt-pic{
     width:100%;
     max-width:300px;
     height:auto;
+    margin:0 auto;
   }
+
 
   .info,
   .par1,
@@ -429,4 +459,13 @@ h2{
   .per{
     word-wrap:break-word;
   }
+  
+
+
+  .icon-pics-div{
+    justify-content:center;
+  }
+  
+
+
 }
