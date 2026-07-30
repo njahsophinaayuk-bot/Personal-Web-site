@@ -1,5 +1,5 @@
  nav{
-  margin-left: 500pcx;
+  margin-left: 500px;
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -19,16 +19,15 @@
    }
     body{
         background: linear-gradient(#2d168a,#3cdfeb);
-        padding: 0px 100px ;
+        padding: 0px 20px ;
+        overflow-x: hidden;
         width: auto;
         
     }
     .home-bck{
       display: flex;
     }
-    .home-pic{
-
-    }
+    
     .ab{
       border-bottom:4px solid #f472b6;
       border-radius: 5px;
@@ -311,68 +310,14 @@
       } 
       
          
-      
-      /* Mobile Responsive Design */
-@media (max-width: 768px) {
+   @media (max-width:768px){
 
-  /* Navigation */
-  nav {
-    flex-direction: column;
-    align-items: center;
-    gap: 15px;
+  body{
+    padding:20px;
   }
 
-  /* Hero Section */
-  .hero,
-  .home,
-  .container,
-  .hero-content {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-  }
-
-  .hero img,
-  .home img {
-    width: 250px;
-    max-width: 90%;
-    height: auto;
-    margin-top: 20px;
-  }
-
-  h1 {
-    font-size: 2.5rem;
-  }
-
-  p {
-    font-size: 18px;
-  }
-
-  /* Buttons */
-  .buttons {
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-  }
-
-  /* Project Cards */
-  .project-container,
-  .projects {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .card,
-  .project-card {
-    width: 90%;
-    margin-bottom: 20px;
-  }
-
-  /* Remove extra space */
-  section {
-    min-height: auto;
-    padding-bottom: 40px;
-  }
-}
+  nav,
+  .home-bck,
+  .hm-flex,
+  .abt-flex,
+  .abt
