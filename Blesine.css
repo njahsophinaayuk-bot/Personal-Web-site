@@ -312,57 +312,67 @@
       
          
       
-      /* ====== DEFAULT = DESKTOP FIRST ====== */
-.navbar {
-  display: flex;
-  justify-content: space-between;
-  padding: 20px 8%;
-}
-
-.projects-grid {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr); /* 3 cards side by side */
-  gap: 24px;
-}
-
-
-/* ====== @MEDIA FOR TABLET = less than 768px ====== */
+      /* Mobile Responsive Design */
 @media (max-width: 768px) {
-  .navbar {
-    flex-direction: column; /* stack logo + links */
+
+  /* Navigation */
+  nav {
+    flex-direction: column;
     align-items: center;
     gap: 15px;
   }
 
-  .projects-grid {
-    grid-template-columns: repeat(2, 1fr); /* 2 cards side by side */
+  /* Hero Section */
+  .hero,
+  .home,
+  .container,
+  .hero-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
   }
-}
 
-
-/* ====== @MEDIA FOR PHONE = less than 480px ====== */
-@media (max-width: 480px) {
-  .navbar {
-    padding: 15px 5%;
+  .hero img,
+  .home img {
+    width: 250px;
+    max-width: 90%;
+    height: auto;
+    margin-top: 20px;
   }
-  
-  .nav-links {
-    flex-direction: column; /* stack all nav links */
+
+  h1 {
+    font-size: 2.5rem;
+  }
+
+  p {
+    font-size: 18px;
+  }
+
+  /* Buttons */
+  .buttons {
+    display: flex;
+    flex-direction: column;
     gap: 10px;
   }
 
-  .projects-grid {
-    grid-template-columns: 1fr; /* 1 card per row */
+  /* Project Cards */
+  .project-container,
+  .projects {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
 
+  .card,
+  .project-card {
+    width: 90%;
+    margin-bottom: 20px;
+  }
 
-     
-        
-        
-       
-         
-        
-    
-    
-
-     
+  /* Remove extra space */
+  section {
+    min-height: auto;
+    padding-bottom: 40px;
+  }
+}
