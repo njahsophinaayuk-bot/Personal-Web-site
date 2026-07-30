@@ -19,8 +19,8 @@
    }
     body{
         background: linear-gradient(#2d168a,#3cdfeb);
-        padding: 0px 20px ;
-        overflow-x: hidden;
+        padding: 0px 100px ;
+       
         width: auto;
         
     }
@@ -320,4 +320,35 @@
   .home-bck,
   .hm-flex,
   .abt-flex,
-  .abt
+  .abtdiv1,
+  .abtdiv2,
+  .cntcpg,
+  .pics-contianer{
+    flex-direction:column;
+    align-items:center;
+  }
+
+  h1{
+    font-size:40px;
+  }
+
+  p{
+    font-size:18px;
+  }
+
+  .contain,
+  .send-btn,
+  .abt-pic-div,
+  .pics{
+    width:100%;
+    max-width:350px;
+    margin:20px auto;
+  }
+
+  .abt-pic,
+  img{
+    width:100%;
+    max-width:300px;
+    height:auto;
+  }
+}
